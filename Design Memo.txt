@@ -1,0 +1,7 @@
+Stacks are the right choice for an undo/redo system because they follow the Last-In, First-Out (LIFO) principle. The most recent action is always the first one that should be undone, which matches perfectly with how a stack operates. By pushing actions onto the undo stack and popping them when undone, we can easily reverse the most recent changes. Similarly, the redo stack allows us to reapply actions in the correct order.
+
+Queues are better suited for the help desk ticketing system because they follow the First-In, First-Out (FIFO) principle. Customers should be helped in the order they arrive, and a queue ensures fairness by always serving the earliest waiting customer first. This mirrors real-world scenarios like waiting in line at a store or a call center.
+
+Our implementations differ from Python’s built-in lists in that they enforce strict stack and queue behavior. While Python lists can be used to simulate both, they allow random access and operations at any index, which can lead to misuse or inefficiency. By building custom classes with Node-based linked structures, we ensure that only valid stack or queue operations are possible, and we gain a deeper understanding of how these data structures work internally.
+
+The stack and queue implementations provide clear, predictable behavior that aligns with the needs of undo/redo systems and customer service queues.
